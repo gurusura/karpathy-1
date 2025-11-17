@@ -1,0 +1,6 @@
+.env
+.DS_Store
+sandbox/
+uv.lock
+
+__pycache__/
