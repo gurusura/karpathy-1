@@ -47,6 +47,8 @@ This automatically:
 6. Select `karpathy` in the top left under 'Select an agent'
 7. All outputs will be in the `sandbox` directory so continue to monitor that as you converse with the agent
 
+**Note:** Any files you want the agent to use (datasets, scripts, etc.) should be manually added to the `sandbox` directory.
+
 ## Claude Scientific Skills
 
 This repository is designed to work with the **[Claude Scientific Skills](https://github.com/K-Dense-AI/claude-scientific-skills)** collection of ready-to-use scientific tools and workflows ([link](https://github.com/K-Dense-AI/claude-scientific-skills)). The `start.py` setup script creates a `sandbox` that includes scientific skills from this collection so the `karpathy` agent can leverage specialized ML libraries and scientific workflows. For full details on the skills themselves, see the upstream repository’s README and documentation [here](https://github.com/K-Dense-AI/claude-scientific-skills).
@@ -58,6 +60,8 @@ To set up the sandbox without starting the web interface:
 ```bash
 python -m karpathy.utils
 ```
+
+**Note:** Any files you want the agent to use (datasets, scripts, etc.) should be manually added to the `sandbox` directory.
 
 To run the ADK web interface manually:
 

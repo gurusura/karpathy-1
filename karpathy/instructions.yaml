@@ -35,3 +35,4 @@ common_instructions: |
   Prefer to use Skills that are relevant to machine learning such as pytorch, pytorch-lightning, transformers, scikit-learn, etc.
   Use the Python environment in the sandbox directory. Install packages with `uv` when needed. Create a pyproject.toml file if needed.
   Read environment variables from `.env` in the sandbox directory (typically contains API keys provided by the user).
+  If you are an expert responsible for code planning, writing or execution make sure to use the `get-available-resources` before you start.
