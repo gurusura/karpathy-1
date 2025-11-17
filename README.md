@@ -1,51 +1,56 @@
 # Karpathy
-An agentic Machine Learning Engineer
+An agentic Machine Learning Engineer that trains state-of-the-art ML models using Claude Code SDK and Google ADK.
+
+## Prerequisites
+
+- Python 3.13 or higher
+- [uv](https://github.com/astral-sh/uv) package manager
+- Claude Code installed and authenticated (see [installation guide](https://www.claude.com/product/claude-code))
 
 ## Setup
 
-### 1. Install and Authenticate Claude Code
+### 1. Install Dependencies
 
-For detailed installation and authentication instructions, visit: https://www.claude.com/product/claude-code
-
-### 2. Environment Variables
-
-Copy the `.env.example` file to `.env` in the `karpathy` sub-directory and fill in your API keys:
-
-```bash
-cp karpathy/.env.example karpathy/.env
-```
-
-Then edit `karpathy/.env` with your actual API key:
-
-```bash
-OPENROUTER_API_KEY=your_openrouter_api_key_here
-```
-
-The `OPENROUTER_API_KEY` is required for the agent to function properly.
-
-### 3. Install Dependencies
-
-Make sure you have the required dependencies installed. If using `uv`:
+Install dependencies using `uv`:
 
 ```bash
 uv sync
 ```
 
+### 2. Environment Variables
+
+Create a `.env` file in the `karpathy` directory with your API keys:
+
+```bash
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+AGENT_MODEL=your_model_name_here  # Optional: defaults to model configured in ADK
+```
+
+The `OPENROUTER_API_KEY` is required for the agent to function properly.
+
 ## Quick Start
 
-To setup the sandbox and start the ADK web interface, simply run:
+Run the startup script to set up the sandbox and start the ADK web interface:
 
 ```bash
 python start.py
 ```
 
-This will automatically:
-1. Setup the sandbox environment
-2. Start the ADK web interface
+This automatically:
+1. Creates a `sandbox` directory with scientific skills from Claude Scientific Skills
+2. Sets up a Python virtual environment with ML packages (PyTorch, transformers, scikit-learn, etc.)
+3. Copies your `.env` file to the sandbox
+4. Starts the ADK web interface
 
 ## Manual Usage
 
-If you want to run the ADK web interface manually without the setup script:
+To set up the sandbox without starting the web interface:
+
+```bash
+python -m karpathy.utils
+```
+
+To run the ADK web interface manually:
 
 ```bash
 adk web

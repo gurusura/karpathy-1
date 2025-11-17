@@ -8,8 +8,6 @@ from .utils import load_instructions
 
 load_dotenv("karpathy/.env")
 
-SEARCH_MODEL = os.getenv("SEARCH_MODEL")
-
 COMMON_INSTRUCTIONS = load_instructions("common_instructions")
 
 
