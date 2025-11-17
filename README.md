@@ -49,6 +49,12 @@ This automatically:
 
 **Note:** Any files you want the agent to use (datasets, scripts, etc.) should be manually added to the `sandbox` directory.
 
+## Community
+
+Join our K-Dense Slack community to connect with other users, share ideas, and get support:
+
+**[Join K-Dense Slack Community](https://join.slack.com/t/k-densecommunity/shared_invite/zt-3iajtyls1-EwmkwIZk0g_o74311Tkf5g)**
+
 ## Claude Scientific Skills
 
 This repository is designed to work with the **[Claude Scientific Skills](https://github.com/K-Dense-AI/claude-scientific-skills)** collection of ready-to-use scientific tools and workflows ([link](https://github.com/K-Dense-AI/claude-scientific-skills)). The `start.py` setup script creates a `sandbox` that includes scientific skills from this collection so the `karpathy` agent can leverage specialized ML libraries and scientific workflows. For full details on the skills themselves, see the upstream repository’s README and documentation [here](https://github.com/K-Dense-AI/claude-scientific-skills).
