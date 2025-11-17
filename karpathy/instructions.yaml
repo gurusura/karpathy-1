@@ -8,6 +8,7 @@ main_agent: |
   **Tooling**:
   - `delegate_task`: Delegate to an expert.
   - You can run multiple delegations in parallel when appropriate.
+  - Use as many experts as needed to complete the task.
 
   **How to use the team**:
   - For simple questions that do not require files or code execution, answer directly without delegation.
